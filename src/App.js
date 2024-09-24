@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import card from "./images/illustration.svg";
+import avatar from "./images/avatar.webp";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="body">
+      <div className="container">
+        <img src={card} alt="card" className="image" />
+        <div className="text">
+          <h3 className="learning">Learning</h3>
+          <p>Published 21 Dec 2023</p>
+          <h1>HTML & CSS foundations</h1>
+          <p className="paragraph">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+          <div className=" profile">
+            <img src={avatar} alt="avatar" />
+            <h3>Greg Hooper</h3>
+          </div>
+        </div>
+      </div>
+    </section>
   );
-}
+};
 
 export default App;
