@@ -28,7 +28,7 @@
 .learning {
   background-color: yellow;
   font-weight: bold;
-  width: 24%;
+  width: 25%;
   padding: 5px;
   border-radius: 5px;
 }
@@ -44,5 +44,8 @@
 @media screen and (max-width: 960px) {
   .container {
     width: 80%;
+  }
+  .learning {
+    width: 33%;
   }
 }
